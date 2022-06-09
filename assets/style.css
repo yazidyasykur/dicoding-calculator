@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+}
+
+.container-flex-column{
+    display:flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+.container-flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.button {
+    flex-basis: 25%;
+    width: 200px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    padding: 40px;
+    border: 1px solid rgb(180, 180, 180);
+    background: -webkit-linear-gradient(top, #d2d2d2, #ddd);
+    cursor: pointer;
+}
+
+.operator,
+.equals,
+.negative{
+    background: -webkit-linear-gradient(top, #f59504, rgb(236, 155, 32));
+}
+
+.double {
+    flex-basis: 50%;
+}
+
+.display{
+    text-align: right;
+    background: rgb(68, 68, 68);
+    color: white;
+    padding: 20px;
+}
+
+.button:hover {
+    background: rgba(112, 112, 112, 0.8);
+}
