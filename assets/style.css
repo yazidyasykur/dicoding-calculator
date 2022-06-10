@@ -6,10 +6,19 @@ body {
     font-family: monospace;
 }
 
+.card {
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid grey;
+    background:rgb(245, 245, 245);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
 .container-flex-column{
     display:flex;
     flex-direction: column;
-    max-width: 500px;
+    width: 100%;
 }
 
 .container-flex-row{
@@ -19,8 +28,8 @@ body {
 
 .button {
     flex-basis: 25%;
-    width: 200px;
     font-size: 1.5em;
+    width: 200px;
     font-weight: bold;
     text-align: center;
     padding: 40px;
@@ -47,5 +56,12 @@ body {
 }
 
 .button:hover {
-    background: rgba(112, 112, 112, 0.8);
+    color: white;
 }
+
+@media screen and (max-width: 513px) {
+    .button {
+        padding: 10px;
+    }
+ }
+ 
